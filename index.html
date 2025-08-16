@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Adda </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="new.js"></script>
+</head>
+
+<body>
+
+    <!-- HEADER PART -->
+    <header>
+        <nav class="navbar flex between wrapper">
+            <a href="#" class="logo">Foodie</a>
+            <!-- DESKTOP MENU -->
+            <ul class="navlist flex gap-3">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="desktop-action flex gap-2">
+                <a href="#" class="cart-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-value">0</span>
+                </a>
+                <a href="#" class="btn sign-in-btn">
+                    sign in
+                    &nbsp;
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+                <a href="#" class="btn logout-btn hidden">Log Out</a>
+                <a href="#" class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+
+            <!-- MOBILE MENU -->
+            <ul class="mobile-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="btn sign-in-btn">
+                        sign in
+                        &nbsp;
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </a>
+                </li>
+                <li><a href="#" class="btn logout-btn hidden">Log Out</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <!-- MAIN CONTENT -->
+    <main>
+        <section id="home">
+            <div class=" hero-section flex wrapper gap-4">
+                <div class="content">
+                    <h1>Enjoy your<br>
+                        <pre>Delicious <span>Food</span></pre>
+                    </h1>
+                    <p class="para">
+                        We will fill your tummy with delicious <br>
+                        food with fast delivery.
+                    </p>
+                    <div class="flex gap-2">
+                        <a href="#" class="btn order-now-btn">Order now</a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="index.html" target="_blank" class="social-icon">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="image/delivery-boy.png" alt="Delivery Boy">
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="wrapper p-top">
+                <div class="text-center">
+                    <h5>Our Services</h5>
+                    <h2>How does it work?</h2>
+                </div>
+                <div class="flex text-center mt-4 gap-4">
+                    <div class="service-card">
+                        <div class="images-container">
+                            <img src="image/easy-to-order.png" alt="easy-to-order">
+                        </div>
+                        <h3>Easy to Order</h3>
+                        <p>You Only need a few steps in ordering your favorite food.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="images-container">
+                            <img src="image/fast-delivery.png" alt="fast-delivery">
+                        </div>
+                        <h3>Fast Delivery</h3>
+                        <p>delivery that is always on time even faster.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="images-container">
+                            <img src="image/best-quality.png" alt="best-quality">
+                        </div>
+                        <h3>Best Quality</h3>
+                        <p>We ensure the best quality food for our customers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu">
+            <div class="wrapper p-top">
+                <div class="text-center">
+                    <h5>Our Menu</h5>
+                    <h2>The most popular dishes</h2>
+                </div>
+                <div class="card list text-center flex mt-4 gap-2">
+                    <!-- Menu items will be dynamically inserted here by JS -->
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews">
+            <div class="wrapper p-top flex gap-3">
+                <div class="image-container">
+                    <img src="image/delivery-boy-with-phone.png" alt="Delivery boy with phone">
+                </div>
+                <div class="content">
+                    <h5>Our reviews</h5>
+                    <h2>What they say?</h2>
+                    <div class="review-container">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper mt-4">
+                                <div class="swiper-slide">
+                                    <div class="flex gap-2">
+                                        <div class="profile">
+                                            <img src="image/Gulam_hyder.png" alt=" profile1">
+                                        </div>
+                                        <div>
+                                            <h4>Gulam Hyder</h4>
+                                            <div class="mt-half">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="para">
+                                        Foodie is the best food delivery service I have ever used. The food is always
+                                        fresh and delicious, and the delivery is super fast. Highly recommend.
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="flex gap-2">
+                                        <div class="profile">
+                                            <img src="image/Prativa.jpg" alt=" profile2">
+                                        </div>
+                                        <div>
+                                            <h4> Prativa Khandual</h4>
+                                            <div class="mt-half">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="para">
+                                        Foodie has been a wonderful experience. Every dish is full of flavor, and the
+                                        delivery is always quicker than expected. I find myself coming back to order
+                                        again and again.
+                                    </p>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <div class="flex gap-2">
+                                        <div class="profile">
+                                            <img src="image/Shreeyash.png" alt=" profile3">
+                                        </div>
+                                        <div>
+                                            <h4> Shreeyash Kar</h4>
+                                            <div class="mt-half">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="para">
+                                        foodie is absolutely fantastic
+                                        meals are always flavorful and fresh
+                                        delivery reaches right on time
+                                        definitely worth recommending.
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="flex gap-2">
+                                        <div class="profile">
+                                            <img src="image/Shalini_hota.png" alt=" profile4">
+                                        </div>
+                                        <div>
+                                            <h4> Shalini Hota</h4>
+                                            <div class="mt-half">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="para">
+                                        foodie is the best food delivery service I have ever used. The food is always
+                                        fresh and delicious, and the delivery is super fast. Highly recommend!.
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="flex gap-2">
+                                        <div class="profile">
+                                            <img src="image/Prabhanjan.png" alt=" profile5">
+                                        </div>
+                                        <div>
+                                            <h4> Prabhanjan Das</h4>
+                                            <div class="mt-half">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="para">
+                                        foodie has been a game-changer
+                                        every dish is bursting with flavor
+                                        orders arrive quicker than expected,
+                                        can’t stop ordering again and again.
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="flex gap-2">
+                                        <div class="profile">
+                                            <img src="image/Shakambari.jpeg" alt=" profile6">
+                                        </div>
+                                        <div>
+                                            <h4> Shakambari Mohapatra</h4>
+                                            <div class="mt-half">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="para">
+                                        fresh and delicious food, fast delivery, and excellent customer service. I love
+                                        using Foodie for my meals. Perfect for casual dinners or special occasions.
+                                        truly a foodie's paradise.
+                                    </p>
+                                </div>
+                                
+                            </div>
+                            <div class="flex between">
+                                <a href="#" class="arrow" id="prev"><i class="fa-solid fa-arrow-left"></i></a>
+                                <a href="#" class="arrow" id="next"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="wrapper p-top ">
+                <div class="app-container flex between">
+                    <div class="image-container">
+                        <img src="image/mobile-app.png" alt="mobile-app">
+                    </div>
+                    <div class="content">
+                        <h5>Our Application</h5>
+                        <h2> simple way to <br>order your food</h2>
+                        <p class="para">
+                            Delicious food, just a tap away. <br>
+                            Your cravings delivered to your door
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.foodies.thefoodies" target="_blank" class="btn">Download the App</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrapper p-top">
+                <div class="text-center">
+                    <h5>Our Subscribe</h5>
+                    <h2>Subscribe To our Newsletter</h2>
+                    <p class="para m-auto">
+                        subscribe to our newspaper today
+                        drop your email below
+                        get daily updates straight to you
+                        stay informed and connected
+                    </p>
+                    <div class="input-container flex ">
+                        <input type="email" name="email" id="email" placeholder="Enter your email address"
+                            autocomplete="off">
+                        <button class="btn" id="subscribe-btn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER PART -->
+    <footer id="contact">
+        <div class="container">
+            <div class="brand-column">
+                <h3 class="brand-name">Foodie.</h3>
+                <p class="brand-description">
+                    We will fill your tummy with delicious food with fast delivery.
+                </p>
+                <div class="social-icons">
+                    <a href="https://x.com/SarojMohapa7"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/saroj__mohapatra__07/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="http://127.0.0.1:5500/index.html"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="mailto:sarojmohapatra07@gmail.com"><i class="fa-brands fa-google-plus-g"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Our Menu</h4>
+                <ul>
+                    <li><a href="#menu">Special</a></li>
+                    <li><a href="#menu">Popular</a></li>
+                    <li><a href="#menu">Categories</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#home">Why Foodie</a></li>
+                    <li><a href="#">Partner with us</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#">FAQ's</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#sign-in">Account</a></li>
+                    <li><a href="#">Support center</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CART MODAL -->
+    <div class="cart-overlay">
+        <div class="cart-container">
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+                <a href="#" class="close-cart-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+            </div>
+            <ul class="cart-items">
+                <!-- Cart items will be dynamically inserted here by JS -->
+            </ul>
+            <div class="cart-footer">
+                <div class="total-section">
+                    <h4>Total:</h4>
+                    <p>₹0.00</p>
+                </div>
+                <div class="cart-buttons">
+                    <button class="cart-btn close-btn">Close</button>
+                    <button class="cart-btn checkout-btn">Check out</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AUTH MODAL -->
+    <div class="auth-overlay">
+        <div class="auth-container">
+            <a href="#" class="close-auth-btn"><i class="fa-solid fa-xmark"></i></a>
+
+            <!-- Login Form -->
+            <form class="auth-form" id="login-form">
+                <h3>Login to Foodie</h3>
+                <input type="email" placeholder="Email Address" required>
+                <input type="password" placeholder="Password" required>
+                <p class="auth-error"></p>
+                <button type="submit" class="btn">Login</button>
+                <p class="auth-switch">Don't have an account? <a href="#" id="show-register">Create one</a></p>
+            </form>
+
+            <!-- Register Form -->
+            <form class="auth-form hidden" id="register-form">
+                <h3>Create Your Account</h3>
+                <input type="email" placeholder="Email Address" required>
+                <input type="tel" placeholder="Mobile Number" required>
+                <textarea placeholder="Address" rows="3" required></textarea>
+                <input type="password" placeholder="Password" required>
+                <p class="auth-error"></p>
+                <button type="submit" class="btn">Create Account</button>
+                <p class="auth-switch">Already have an account? <a href="#" id="show-login">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>
